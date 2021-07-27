@@ -74,7 +74,7 @@ contract MasterChef is Ownable, ReentrancyGuard {
     uint256 public NATIVEPerBlock;
     // Native total supply: 2 mil = 2000000e18
     uint256 public NATIVEMaxSupply = 2000000e18;
-    // Approx Monday, 9 August 2021 19:00:00 GTM
+    // Approx Monday, 9 August 2021 19:00:00 GMT
     uint256 public startTime = 1628535600;
     // Counter StartTime
     uint256 public startTimeCount = 0;
