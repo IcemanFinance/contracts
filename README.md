@@ -18,10 +18,13 @@ ICEMAN is a token native to the Iceman.finance ecosystem. Iceman.finance is a yi
 ## How to obtain ICEMAN?
 
 **Binance Smart Chain:**
+
 ICEMAN token is traded on Pancakeswap, one of the leading decentralized exchanges (DEX) hosted on Binance Smart Chain (BSC). Pancakeswap is an automated market maker (AMM) that allows users to buy ICEMAN tokens and instantly exchange them with other BEP-20 type tokens listed on Pancakeswap.
 
 **Fantom Network (FTM):**
+
 ICEMAN token is traded on SpookySwap, one of the leading decentralized exchanges (DEX) hosted on Fantom Opera (FTM). SpookySwap is an automated market maker (AMM) that allows users to buy ICEMAN tokens and instantly exchange them with other Fantom Opera compatible tokens listed on SpookySwap.
 
 **Polygon (Matic):**
+
 ICEMAN token is traded on QuickSwap, one of the leading decentralized exchanges (DEX) hosted on Polygon (MATIC). QuickSwap is an automated market maker (AMM) that allows users to buy ICEMAN tokens and instantly exchange them with other Polygon (MATIC) compatible tokens listed on QuickSwap.
