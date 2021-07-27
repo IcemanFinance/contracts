@@ -5,7 +5,6 @@
 /build/
 /test/
 /accounts.json
-/truffle-config.js
 /.env
 /.DS_Store
 yarn.lock

@@ -2,7 +2,7 @@ const NativeToken = artifacts.require('./NativeToken.sol')
 
 module.exports = async function (deployer) {
 
-    await deployer.deploy(NativeToken, "xNAME", "xALIAS")
+    await deployer.deploy(NativeToken, "ICEMAN", "ICEMAN")
 
     const token = await NativeToken.deployed()
 
