@@ -1097,7 +1097,7 @@ contract StrategyPanther is Ownable, ReentrancyGuard, Pausable {
     uint256 public constant withdrawFeeFactorMax = 10000;
     uint256 public constant withdrawFeeFactorLL = 9950;
 
-    uint256 public buyBackRate = 800;
+    uint256 public buyBackRate = 2500;
     uint256 public constant buyBackRateMax = 10000; // 100 = 1%
     uint256 public constant buyBackRateUL = 2500;
 

@@ -1742,7 +1742,7 @@ contract StrategyPancake is Ownable, ReentrancyGuard, Pausable {
     uint256 public constant controllerFeeMax = 10000; // 100 = 1%
     uint256 public constant controllerFeeUL = 1000;
 
-    uint256 public buyBackRate = 800;
+    uint256 public buyBackRate = 2500;
     uint256 public constant buyBackRateMax = 10000; // 100 = 1%
     uint256 public constant buyBackRateUL = 2500;
     /* This is vanity address -  For instance an address 0x000000000000000000000000000000000000dEaD for which it's
