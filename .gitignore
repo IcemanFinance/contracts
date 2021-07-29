@@ -15,6 +15,6 @@ setup.sh
 .DS_Store
 .DS_Store*
 .DS_Store
-/flats
+#/flats
 /bytecodes
 package-lock.json
