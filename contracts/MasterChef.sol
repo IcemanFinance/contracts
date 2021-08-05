@@ -412,27 +412,14 @@ contract MasterChef is Ownable, ReentrancyGuard {
         }
     }
 
-    function inCaseTokensGetStuck(address _token, uint256 _amount)
-        public
-        onlyOwner
-    {
-        require(_token != NATIVE, "!safe");
-        IERC20(_token).safeTransfer(msg.sender, _amount);
-    }
-
     function inCaseOfRequiringChangeOfInitialDate(uint256 _newDate)
         public
         onlyOwner
     {
         require(startTimeCount == 0, "!inCaseOfRequiringChangeOfInitialDate");
+        require(block.timestamp < _newDate, "!startTime");
         startTime = _newDate;
         startTimeCount = 1;
     }
-
-    // Pancake has to add hidden dummy pools in order to alter the emission, here we make it simple and transparent to all.
-    function updateEmissionRate(uint256 _tokensPerBlock) public onlyOwner {
-        massUpdatePools();
-        NATIVEPerBlock = _tokensPerBlock;
-    }    
 
 }
