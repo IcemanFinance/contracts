@@ -422,4 +422,11 @@ contract MasterChef is Ownable, ReentrancyGuard {
         startTimeCount = 1;
     }
 
+    // Pancake has to add hidden dummy pools in order to alter the emission, here we make it simple and transparent to all.
+    function updateEmissionRate(uint256 _tokensPerBlock) public onlyOwner {
+        require(_tokensPerBlock <= 1 ether, "!NATIVEPerBlock");
+        massUpdatePools();
+        NATIVEPerBlock = _tokensPerBlock;
+    }    
+
 }
