@@ -20,7 +20,7 @@ module.exports = {
       gasPrice: 50000000000
     },
     bsc: {
-      provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://bsc-dataseed4.ninicoin.io/"),
+      provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://bsc-dataseed2.defibit.io/"),
       network_id: 56,
       gasPrice: 6000000000
     },
@@ -32,13 +32,13 @@ module.exports = {
       networkCheckTimeout: 1000000000,
     },
     matic: {
-      provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://rpc-mainnet.maticvigil.com"),
+      provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://polygon-mainnet.infura.io/v3/07d1b7dec8394a1188fd66959686f5c7"),
       network_id: 137,
       chain_id: 1137,
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true,
-      gasPrice: 15000000000,
+      gasPrice: 70000000000,
     },
   },
   plugins: [

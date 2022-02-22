@@ -8,7 +8,7 @@ module.exports = async function (deployer) {
     const referrals = await Referrals.deployed()
     const timelock = await TimelockController.deployed()
 
-    await deployer.deploy(MasterChef, token.address, process.env.FEE_ADDRESS, referrals.address, 1)
+    await deployer.deploy(MasterChef, token.address, process.env.FEE_ADDRESS, referrals.address, 0)
 
     const chef = await MasterChef.deployed()
 

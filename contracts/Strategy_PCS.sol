@@ -1121,7 +1121,6 @@ contract Strategy_PCS is Ownable, ReentrancyGuard, Pausable {
     address[] public earnedToWantPath;
     address[] public earnedToWBNBPath;
     address[] public WBNBToNATIVEPath;
-
     uint256 public counterCompound = 0;
 
     constructor(
@@ -1152,6 +1151,7 @@ contract Strategy_PCS is Ownable, ReentrancyGuard, Pausable {
         govAddress = _govAddress;
 
         if (isAutoComp) {
+
             if (!isSingleVault) {
                 token0Address = _token0Address;
                 token1Address = _token1Address;
@@ -1198,6 +1198,7 @@ contract Strategy_PCS is Ownable, ReentrancyGuard, Pausable {
         }
 
         transferOwnership(nativeFarmAddress);
+        
     }
 
     modifier onlyAllowGov() {
